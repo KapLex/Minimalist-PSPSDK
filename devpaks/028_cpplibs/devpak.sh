@@ -4,7 +4,7 @@ set -e
 
 LIBNAME=cpplibs
 VERSION=1547
-svnGet build "svn://svn.ps2dev.org/psp/trunk" $LIBNAME
+svnGet build http://psp.jim.sh/svn/psp/trunk $LIBNAME
 cd build/$LIBNAME
 make -s
 mkdir -p ../target/psp/include/libpsp2d ../target/psp/include/libpspsnd ../target/psp/lib ../target/doc

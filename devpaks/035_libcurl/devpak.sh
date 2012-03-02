@@ -5,7 +5,7 @@ set -e
 LIBNAME=libcurl
 VERSION=7.15.1
 
-svnGet build svn://svn.ps2dev.org/pspware/trunk $LIBNAME
+svnGet build http://psp.jim.sh/svn/pspware/trunk/ $LIBNAME
 
 cd build/$LIBNAME
 

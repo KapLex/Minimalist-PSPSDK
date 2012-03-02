@@ -5,7 +5,7 @@ set -e
 LIBNAME=TinyGL
 VERSION=0.4
 
-svnGet build svn://svn.ps2dev.org/psp/trunk $LIBNAME
+svnGet build http://psp.jim.sh/svn/psp/trunk $LIBNAME
 
 cd build/$LIBNAME
 

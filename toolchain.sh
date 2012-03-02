@@ -324,7 +324,7 @@ function installPremake {
 }
 
 function downloadPatches {
-  svnGet psp "svn://svn.ps2dev.org/psp/trunk/psptoolchain" "patches"
+  svnGet psp "http://psp.jim.sh/svn/psp/trunk/psptoolchain" "patches"
 }
 
 function buildBinutils {
@@ -402,7 +402,7 @@ function buildXGCC {
 }
 
 function bootstrapSDK {
-  svnGet psp "svn://svn.ps2dev.org/psp/trunk" "pspsdk"
+  svnGet psp "http://psp.jim.sh/svn/psp/trunk" "pspsdk"
   cd psp
   if [ ! -f pspsdk/configure ]
   then
@@ -570,7 +570,7 @@ function installExtraBinaries {
 }
 
 function installPSPLinkUSB {
-  svnGet psp "svn://svn.ps2dev.org/psp/trunk" "psplinkusb"
+  svnGet psp "http://psp.jim.sh/svn/psp/trunk" "psplinkusb"
   cd psp
   if [ "$OS" == "MINGW32_NT" ]; then
     cd psplinkusb
